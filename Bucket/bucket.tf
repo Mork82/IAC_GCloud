@@ -13,6 +13,7 @@ resource "google_storage_bucket" "terraform_state" {
       type = "Delete"
     }
     condition {
+        
       age = 365
     }
   }
